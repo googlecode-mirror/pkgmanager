@@ -1,0 +1,15 @@
+B.H.
+
+This framework is aimed to ease web application development in PHP5. It allows to split your application into separate "packages" with a possibility to manage a separate configuration for each package where user can override a default values supplied by the package code.
+
+User application just "imports" the required packages, supplies a required config values, and the framework is responsible for loading the required classes using autoload techniques.
+
+Contains a database abstraction layer classes, which i find VERY useful :-)
+
+Currently, the framework contains HTML output object model, with a robust template file parser/renderer. Each HTML block contains a tree of "member" elements (nested html\_block class instances or raw strings) which can be accessed by a "path" like syntax. HTML package also contains classes to manage 2-way data-binded form elements (Element values are loaded from the corresponding keys of "data" array, and the submitted values are stored back)
+
+Sorry, most of docs are still missing, but many APIs are described in PHPDoc comments and method declarations.
+
+Also hosted at GitHub https://github.com/mkaganer/pkgmanager
+
+Best regards, Mordechay Kaganer
